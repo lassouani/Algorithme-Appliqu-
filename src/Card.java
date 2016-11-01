@@ -3,12 +3,10 @@ package AAproject.src;
 
 import java.util.Random;
 
-
 public class Card extends Cards{
 	
 	private int card_number;
 	private int card_color;
-	
 
 
 	public Card(int card_number, int card_color) {
@@ -34,10 +32,12 @@ public class Card extends Cards{
 		return new Card(number,color);
 	}
 	public String toString() {
-		return getCard_number()+" "+ card_color +"\n";
+		return "--> "+getCard_number()+" "+ card_color +"\n";
 	}
 
-
+    void print(){
+    	System.out.print(this.toString());
+    }
 
 	public int getCard_number() {
 		return card_number;
@@ -58,9 +58,4 @@ public class Card extends Cards{
 	
 	
 	
-	
-	
-	
-
-	
-}
+}	
